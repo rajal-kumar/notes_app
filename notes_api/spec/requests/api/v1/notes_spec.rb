@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe "Notes", type: :request do
+RSpec.describe "Api::V1::Notes", type: :request do
   describe "POST /notes" do
     it "creates a note with title and body" do
-      post "/notes", params: {
+      post "/api/v1/notes", params: {
         note: { title: "Test note", body: "This is a **Markdown**" }
       }
 
