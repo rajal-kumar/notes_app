@@ -2,13 +2,15 @@ module Api
   module V1
     class NotesController < ApplicationController
       def index
-        render json: Note.all
+        notes = Note.all
+
+        render json: notes, each_serializer: NoteSerializer
       end
 
       def show
         note = Note.find(params[:id])
 
-        render json: note
+        render json: note, serializer: NoteSerialize
       end
 
       def create
