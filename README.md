@@ -6,13 +6,10 @@ This project contains both the backend API (notes_api/) and the frontend React a
 
 If I had more time, I would separate the backend and frontend into their own standalone repositories or folders, each with their own deployment and configuration structure — as you would in a production-grade project. That setup would allow:
 
-Independent CI/CD pipelines
-
-Better separation of concerns
-
-More realistic deployment environments (e.g. Dockerized backend, static frontend hosting)
-
-Easier scalability and collaboration
+- Independent CI/CD pipelines
+- Better separation of concerns
+- More realistic deployment environments (e.g. Dockerized backend, static frontend hosting)
+- Easier scalability and collaboration
 
 ---
 
